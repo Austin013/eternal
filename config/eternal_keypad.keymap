@@ -19,6 +19,15 @@
       zmk,kscan = &kscan0;
       zmk,matrix-transform = &default_transform;
   };
+  / {
+  combos {
+        compatible = "zmk,combos";
+        esc {
+            timeout-ms = <30>;
+            key-positions = <26 27>;
+            bindings = <&kp LS(Q)>;
+        };
+    };
   behaviors {
 
         td: tapdance {
@@ -38,10 +47,10 @@
     default_layer {
       bindings = <
                           &td LG(TAB) ESC   &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3    &td LS(N4) N4   &td LS(N5) N5  &td LS(N6) N6
-                          &kp LCTRL         &td LS(Q)  Q      &td LS(W) W     &kp E            &td LS(R) R     &td LS(T) T    &td LS(N7) N7
-        &td F4 F1         &td LS(TAB) TAB   &td LS(A)  A      &kp S           &kp D            &kp F           &td LS(G) G    &td LS(N8) N8
-        &td F5 F2         &kp LSHFT         &td LS(Z)  Z      &td LS(X) X     &td LS(C) C      &td LS(V) V     &td LS(B) B    &td LS(N9) N9
-        &lt 1 F3          &td LS(P) O       &td LS(N) N       &td LS(I) I     &kp SPACE        &td LS(N0) N0
+                          &kp LCTRL         &kp Q             &kp W           &kp E            &kp R           &kp T          &td LS(N7) N7
+        &td F4 F1         &td LS(TAB) TAB   &kp A             &kp S           &kp D            &kp F           &kp G          &td LS(N8) N8
+        &td F5 F2         &kp LSHFT         &kp Z             &kp X           &kp C            &kp V           &kp B          &td LS(N9) N9
+        &lt 1 F3          &td P O           &td LS(N) N       &td LS(I) I     &kp SPACE        &td LS(N0) N0
       >;
     };
 
