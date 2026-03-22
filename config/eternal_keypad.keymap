@@ -19,15 +19,6 @@
       zmk,kscan = &kscan0;
       zmk,matrix-transform = &default_transform;
   };
-  / {
-  combos {
-        compatible = "zmk,combos";
-        esc {
-            timeout-ms = <30>;
-            key-positions = <26 27>;
-            bindings = <&kp LS(Q)>;
-        };
-    };
   behaviors {
 
         td: tapdance {
