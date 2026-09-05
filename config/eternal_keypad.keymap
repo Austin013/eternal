@@ -33,7 +33,7 @@
    };
    macros {
         d2r_hell_mf_run: d2r_hell_mf_run {
-            compatible = "zmk,behavior-macros";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RET>
