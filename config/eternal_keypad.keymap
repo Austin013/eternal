@@ -41,7 +41,7 @@
                 , <&macro_press &kp H>
                 , <&macro_release &kp H>;
         };
-        exit_game: exist_game {
+        exit_game: exit_game {
             compatible = "zmk.behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -59,7 +59,7 @@
 
     default_layer {
       bindings = <
-                          &td RET ESC        &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3    &td LS(N4) N4   &td LS(N5) N5  &exist_game
+                          &td RET ESC        &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3    &td LS(N4) N4   &td LS(N5) N5  &exit_game
                           &kp LCTRL          &kp Q             &kp W           &kp E            &kp R           &kp T          &td LS(N7) N7
         &d2r_hell_mf_run  &td LC(LSHFT) TAB  &kp A             &kp S           &kp D            &kp F           &kp G          &td LS(N8) N8
         &td F5 F2         &kp LSHFT          &kp Z             &kp X           &td LCMD C       &kp V           &kp B          &td LS(N9) N9
