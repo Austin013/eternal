@@ -43,7 +43,7 @@
         };
         exit_game: exist_game {
             compatible = "zmk.behavior-macro";
-            #binding-cells = <0>kn
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp ESC>
                 , <&macro_release &kp ESC>
