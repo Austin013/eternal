@@ -40,7 +40,7 @@
                 , <&macro_tap &kp H>;
         };
         exit_game: exit_game {
-            compatible = "zmk.behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <1>;
             bindings
                 = <&macro_tap &kp ESC>
