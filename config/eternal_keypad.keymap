@@ -36,21 +36,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RET>
-                , <&macro_release &kp RET>
-                , <&macro_press &kp H>
-                , <&macro_release &kp H>;
+                = <&macro_tap &kp RET>
+                , <&macro_tap &kp H>;
         };
         exit_game: exit_game {
             compatible = "zmk.behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp ESC>
-                , <&macro_release &kp ESC>
-                , <&macro_press &kp UP>
-                , <&macro_release &kp UP>
-                , <&macro_press &kp RET>
-                , <&macro_release &kp RET>;
+                = <&macro_tap &kp ESC>
+                , <&macro_tap &kp UP>
+                , <&macro_tap &kp RET>;
             };
     };
 
