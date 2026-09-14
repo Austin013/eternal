@@ -54,11 +54,11 @@
 
     default_layer {
       bindings = <
-                          &td RET ESC        &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3    &td LS(N4) N4   &td LS(N5) N5  &exit_game
-                          &kp LCTRL          &kp Q             &kp W           &kp E            &kp R           &kp T          &td LS(N7) N7
+                          &td RET ESC        &td LS(N1) N1     &td LS(N2) N2   &td LS(N3) N3    &td LS(N4) N4   &td LS(N5) N5  &td LS(N6) N6
+                          &kp LCTRL          &exit_game        &kp W           &kp E            &kp R           &kp T          &td LS(N7) N7
         &d2r_hell_mf_run  &td LC(LSHFT) TAB  &kp A             &kp S           &kp D            &kp F           &kp G          &td LS(N8) N8
         &td F5 F2         &kp LSHFT          &kp Z             &kp X           &td LCMD C       &kp V           &kp B          &td LS(N9) N9
-        &lt 1 F3          &td H O            &td LS(N) N       &td LS(I) I     &kp SPACE        &td LS(N0) N0
+        &lt 1 F3          &td Q O            &td LS(N) N       &td LS(I) I     &kp SPACE        &td LS(N0) N0
       >;
     };
 
